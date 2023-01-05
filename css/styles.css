@@ -187,3 +187,7 @@ body {
 .bottom-links:active {
   color: var(--seventh-color);
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
