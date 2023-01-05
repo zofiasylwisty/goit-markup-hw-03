@@ -220,3 +220,14 @@ body {
 li {
   list-style: none;
 }
+.contact-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 0;
+}
+.contact-list > .contact-address {
+  margin-right: 50px;
+}
