@@ -195,3 +195,28 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.top {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-logo {
+  height: 31px;
+  width: 141px;
+  margin: 24px 93px 25px 215px;
+}
+.menu {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 0;
+  margin-right: 371px;
+}
+.menu > .menu-component:not(:last-child) {
+  margin-right: 46px;
+}
+li {
+  list-style: none;
+}
