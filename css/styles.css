@@ -198,36 +198,42 @@ body {
 .top {
   height: 80px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
-.top-logo {
-  height: 31px;
+.logo-top {
   width: 145px;
+  height: 31px;
   margin: 24px 93px 25px 215px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .menu {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-left: 0;
+  padding-left: 93px;
   margin-right: 371px;
 }
 .menu > .menu-component:not(:last-child) {
   margin-right: 46px;
 }
-li {
-  list-style: none;
-}
 .contact-list {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 0;
+  align-items: center;
 }
 .contact-list > .contact-address {
+  display: flex;
+  display: inline-block;
+  flex-direction: row;
   margin-right: 50px;
+}
+li {
+  list-style: none;
 }
