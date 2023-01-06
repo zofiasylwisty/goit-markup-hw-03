@@ -215,6 +215,8 @@ body {
 .top {
   display: flex;
   justify-content: space-between;
+  max-width: 1600px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .logo-top {
   width: 145px;
@@ -281,4 +283,15 @@ li {
   padding-left: 0;
   padding: auto;
   margin-top: 94px;
+}
+.offers {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 50px;
+  margin-bottom: 94px;
+  justify-content: center;
+}
+.offers > .offer:not(:last-child) {
+  margin-right: 30px;
 }
