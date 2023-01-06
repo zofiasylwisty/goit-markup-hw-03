@@ -140,6 +140,7 @@ body {
   font-weight: 700;
   line-height: 1.87;
   color: var(--fifth-color);
+  margin-right: 30px;
 }
 .latin-text {
   font-family: "Roboto";
@@ -212,7 +213,6 @@ body {
   padding-bottom: 94px;
 }
 .top {
-  height: 80px;
   display: flex;
   justify-content: space-between;
 }
@@ -273,4 +273,12 @@ li {
   margin-right: auto;
   margin-left: 215px;
   margin-bottom: 20px;
+}
+.latin-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 0;
+  padding: auto;
+  margin-top: 94px;
 }
