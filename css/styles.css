@@ -172,6 +172,7 @@ body {
 .location {
   font-family: "Roboto";
   font-size: 14px;
+  font-style: normal;
   line-height: 1.7;
   color: var(--first-color);
 }
@@ -236,4 +237,26 @@ nav {
 }
 li {
   list-style: none;
+}
+.footer-components {
+  height: 252px;
+  background-color: var(--fourth-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+.footer-components > .addresses:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer-components > .addresses:first-child {
+  margin-top: 20px;
+}
+.addresses {
+  margin-left: 215px;
+}
+.bottom-logo {
+  margin-right: auto;
+  margin-left: 215px;
+  margin-bottom: 20px;
 }
