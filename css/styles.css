@@ -1,8 +1,8 @@
 body {
   font-family: "Roboto", sans-serif;
   font-family: inherit;
-  background: var(--first-color);
-  background: inherit;
+  background: var(--first-color) inherit;
+  width: 1600px;
 }
 :root {
   --first-color: #ffffff;
@@ -206,7 +206,7 @@ body {
 }
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0;
 }
 .section {
   padding-top: 94px;
@@ -214,14 +214,15 @@ body {
 }
 .top {
   display: flex;
-  justify-content: space-between;
-  max-width: 1600px;
+  justify-content: center;
   border-bottom: 1px solid #e5e5e5;
 }
 .logo-top {
   width: 145px;
   height: 31px;
-  margin: 24px 93px 25px 215px;
+  margin-top: 24px;
+  margin-right: 93px;
+  margin-bottom: 25px;
 }
 nav {
   display: flex;
@@ -342,4 +343,25 @@ figure {
 }
 .person {
   margin-bottom: 10px;
+}
+.button {
+  padding: 0;
+  margin-bottom: 34px;
+}
+.filters-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+.filters-list > .button:not(:last-child) {
+  margin-right: 8px;
+}
+.filter {
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+.border {
+  border: 1px solid black;
 }
