@@ -240,7 +240,6 @@ li {
 }
 .footer-components {
   height: 252px;
-  background-color: var(--fourth-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
