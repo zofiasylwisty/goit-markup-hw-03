@@ -71,12 +71,10 @@ body {
 .contact:active {
   color: var(--seventh-color);
 }
-.first-section {
-  max-width: 1600px;
-}
+
 .dark-background {
   background-color: var(--fourth-color);
-  height: 600px;
+  width: 1600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,7 +88,7 @@ body {
   line-height: 1.36;
   text-align: center;
   color: var(--first-color);
-  margin-bottom: 30px;
+  margin: 200px 452px 30px;
 }
 .single-button {
   color: var(--sixth-color);
@@ -102,8 +100,9 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.8;
-  padding: 10px;
+  padding: 10px 41px 10px 42px;
   width: 200px;
+  margin: 0px 700px 200px;
 }
 .single-button:hover,
 .single-button:focus,
@@ -112,7 +111,6 @@ body {
   background-color: var(--seventh-color);
   text-align: center;
   display: flex;
-  justify-content: center;
 }
 .filter {
   color: var(--sixth-color);
@@ -134,12 +132,20 @@ body {
   color: var(--first-color);
   background-color: var(--seventh-color);
 }
+.latin-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .small-header {
   font-family: "Roboto";
   font-size: 14px;
   font-weight: 700;
   line-height: 1.87;
   color: var(--fifth-color);
+  margin-left: -40px;
+}
+.latin-list > .small-header:not(:last-child) {
   margin-right: 30px;
 }
 .latin-text {
@@ -168,6 +174,7 @@ body {
   font-size: 16px;
   line-height: 1.18;
   color: var(--third-color);
+  padding-bottom: 30px;
 }
 .term {
   color: var(--sixth-color);
@@ -203,14 +210,6 @@ body {
 .bottom-links:focus,
 .bottom-links:active {
   color: var(--seventh-color);
-}
-.container {
-  max-width: 1200px;
-  margin: 0;
-}
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .top {
   display: flex;
@@ -257,17 +256,19 @@ li {
   list-style: none;
 }
 .footer-components {
-  height: 252px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0;
+  padding-top: 60px;
 }
 .footer-components > .addresses:not(:last-child) {
   margin-bottom: 9px;
 }
 .footer-components > .addresses:first-child {
   margin-top: 20px;
+}
+.footer-components > .addresses:last-child {
+  margin-bottom: 60px;
 }
 .addresses {
   margin-left: 215px;
@@ -277,58 +278,27 @@ li {
   margin-left: 215px;
   margin-bottom: 20px;
 }
-.latin-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-left: 0;
-  padding: auto;
-  margin-top: 94px;
-}
 .offers {
   display: flex;
-  flex-wrap: wrap;
-  padding: 0;
   margin-top: 50px;
-  margin-bottom: 94px;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0px;
 }
-.offers > .offer:not(:last-child) {
-  margin-right: 30px;
-}
-.members-list {
-  background-color: var(--second-color);
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-}
-.team {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  padding-bottom: 94px;
-  margin: 0;
-  justify-content: center;
-}
+
 figure {
-  max-height: 368px;
-  max-width: 270px;
-  padding: 0;
   margin: 0;
-}
-.member {
-  display: flex;
-  min-height: 368px;
-  max-width: 270px;
 }
 .team > .member:not(:last-child) {
   margin-right: 30px;
 }
+.team {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px;
+}
 .photo {
   display: flex;
-  padding: 0;
-  margin: 0;
-  min-height: 368px;
   background-color: var(--first-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -337,11 +307,10 @@ figure {
 .name {
   display: flex;
   flex-direction: column;
-  padding: 0;
-  margin: 30px 0;
   align-items: center;
 }
 .person {
+  padding-top: 30px;
   margin-bottom: 10px;
 }
 .button {
@@ -362,6 +331,21 @@ figure {
   padding: 6px 22px;
   border-radius: 4px;
 }
-.border {
-  border: 1px solid black;
+.main-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottom-section {
+  background-color: var(--second-color);
+  width: 1600px;
+  display: flex;
+  justify-content: center;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  width: 1200px;
 }
