@@ -38,13 +38,52 @@ body {
   color: var(--first-color);
   text-decoration: none;
 }
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 215px;
+  margin-right: 0px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0px;
+  margin-left: 93px;
+  margin-right: 371px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.menu > .menu-component:not(:last-child) {
+  margin-right: 46px;
+}
+.contact-list {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.contact-list > .contact-address:not(:last-child) {
+  margin-right: 50px;
+}
 .logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
+
+li {
+  list-style: none;
+}
+
 .link {
   font-family: "Roboto";
   font-weight: 500;
@@ -112,26 +151,7 @@ body {
   text-align: center;
   display: flex;
 }
-.filter {
-  color: var(--sixth-color);
-  background-color: var(--second-color);
-  cursor: pointer;
-  border: none;
-  border: none;
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.16;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-.filter:hover,
-.filter:focus,
-.filter:active {
-  color: var(--first-color);
-  background-color: var(--seventh-color);
-}
+
 .latin-list {
   display: flex;
   flex-direction: row;
@@ -189,9 +209,7 @@ body {
   font-size: 16px;
   line-height: 1.8;
 }
-.footer-background {
-  background-color: var(--fourth-color);
-}
+
 .location {
   font-family: "Roboto";
   font-size: 14px;
@@ -211,55 +229,18 @@ body {
 .bottom-links:active {
   color: var(--seventh-color);
 }
-.top {
-  display: flex;
-  justify-content: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.logo-top {
-  width: 145px;
-  height: 31px;
-  margin-top: 24px;
-  margin-right: 93px;
-  margin-bottom: 25px;
-}
-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.menu {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 93px;
-  margin-right: 371px;
-}
-.menu > .menu-component:not(:last-child) {
-  margin-right: 46px;
-}
-.contact-list {
-  display: flex;
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 0;
-  align-items: center;
-}
-.contact-list > .contact-address {
-  display: flex;
-  display: inline-block;
-  flex-direction: row;
-  margin-right: 50px;
-}
-li {
-  list-style: none;
+
+.footer-background {
+  background-color: var(--fourth-color);
+  border-top: 1px solid var(--fourth-color);
 }
 .footer-components {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding-top: 60px;
+  padding-left: 215px;
+  margin-bottom: 0px;
 }
 .footer-components > .addresses:not(:last-child) {
   margin-bottom: 9px;
@@ -270,21 +251,13 @@ li {
 .footer-components > .addresses:last-child {
   margin-bottom: 60px;
 }
-.addresses {
-  margin-left: 215px;
-}
-.bottom-logo {
-  margin-right: auto;
-  margin-left: 215px;
-  margin-bottom: 20px;
-}
+
 .offers {
   display: flex;
   margin-top: 50px;
   justify-content: space-between;
   padding: 0px;
 }
-
 figure {
   margin: 0;
 }
@@ -313,24 +286,41 @@ figure {
   padding-top: 30px;
   margin-bottom: 10px;
 }
-.button {
-  padding: 0;
-  margin-bottom: 34px;
-}
+
 .filters-list {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-top: 94px;
-  margin-bottom: 50px;
-}
-.filters-list > .button:not(:last-child) {
-  margin-right: 8px;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 56px;
+  margin-left: 510px;
+  margin-right: 518px;
+  padding: 0px;
+  width: 572px;
 }
 .filter {
+  color: var(--sixth-color);
+  background-color: var(--second-color);
+  cursor: pointer;
+  border: none;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.16;
+  text-align: center;
   padding: 6px 22px;
   border-radius: 4px;
 }
+.filter:hover,
+.filter:focus,
+.filter:active {
+  color: var(--first-color);
+  background-color: var(--seventh-color);
+}
+.filters-list > .filter-element:not(:last-child) {
+  margin-right: 8px;
+}
+
 .main-part {
   display: flex;
   flex-direction: column;
