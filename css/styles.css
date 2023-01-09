@@ -202,12 +202,24 @@ li {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
+  margin-top: 20px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+.test {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 .definition {
   color: var(--third-color);
   font-family: "Roboto";
   font-size: 16px;
   line-height: 1.8;
+  margin-top: 4px;
+  margin-bottom: 20px;
 }
 
 .location {
@@ -343,15 +355,12 @@ figure {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  border: 1px solid tomato;
-  margin-left: 215px;
-  padding-right: 0px;
-  padding-left: 0px;
+  padding: 0;
 }
 .card-item {
-  flex-basis: calc((100% - 2 * 30px) / 3);
-  padding: 0px;
+  flex-basis: calc((100% - 60px) / 3);
 }
 .grid-container {
-  max-width: 1600px;
+  width: 1182px;
+  margin-left: 215px;
 }
