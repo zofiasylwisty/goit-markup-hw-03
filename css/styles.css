@@ -339,3 +339,19 @@ figure {
 .container {
   width: 1200px;
 }
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  border: 1px solid tomato;
+  margin-left: 215px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.card-item {
+  flex-basis: calc((100% - 2 * 30px) / 3);
+  padding: 0px;
+}
+.grid-container {
+  max-width: 1600px;
+}
